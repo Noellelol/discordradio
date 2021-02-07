@@ -13,13 +13,13 @@ client.on("ready", async () => {
 });
 
 setInterval(async function() {
-    if(!client.voice.connection.get(SERVER)) {
+    if(!client.voice.connection.get(GUILD)) {
         let channel = client.channels.get(CHANNEL) || await client.channels.fetch(CHANNEL);
         if(!channel) return;
 
         const connection = await channel.join();
         connection.play(ytdl(LIVE))
     }
-}, 20000);
+}, 10000);
 
 client.login(TOKEN)
