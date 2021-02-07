@@ -12,6 +12,23 @@ client.on("ready", async () => {
     connection.play(ytdl(LIVE))
 });
 
+client.on("message", async () => {
+If(message.content.startsWith === "!ping") {
+message.channel.send(`This numbers are nothing to me really! : \`${client.ws.ping}\``)
+}
+
+elseIf(message.content.startsWith === "!channel") {
+message.channel.send(`Voice Channel - ${CHANNEL}`)
+}
+
+elseIf(message.content.startsWith === "!YT") {
+message.channel.send(`YT Channel - ${LIVE}`)
+}
+else {
+console.log(message)
+}
+});
+
 setInterval(async function() {
     if(!client.voice.connection.get(GUILD)) {
         let channel = client.channels.get(CHANNEL) || await client.channels.fetch(CHANNEL);
