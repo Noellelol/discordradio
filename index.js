@@ -13,16 +13,16 @@ client.on("ready", async () => {
 });
 
 client.on("message", async () => {
-If(message.content.startsWith === "!ping") {
+If(message.content === "ping") {
 message.channel.send(`This numbers are nothing to me really! : \`${client.ws.ping}\``)
 }
 
-elseIf(message.content.startsWith === "!channel") {
-message.channel.send(`Voice Channel - ${CHANNEL}`)
+elseIf(message.content === "lol") {
+message.channel.send(`lel`)
 }
 
-elseIf(message.content.startsWith === "!YT") {
-message.channel.send(`YT Channel - ${LIVE}`)
+elseIf(message.content === "bruh) {
+message.channel.send(`Bruh`)
 }
 else{
 console.log(message)
