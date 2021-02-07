@@ -24,7 +24,7 @@ message.channel.send(`Voice Channel - ${CHANNEL}`)
 elseIf(message.content.startsWith === "!YT") {
 message.channel.send(`YT Channel - ${LIVE}`)
 }
-else {
+else{
 console.log(message)
 }
 });
